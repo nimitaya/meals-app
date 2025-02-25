@@ -46,6 +46,7 @@
     - AboutPage.jsx
     - MealsPage.jsx
     - MealDetailsPage.jsx
+    - ErrorPage.jsx
   - data
     - MealsData.js
   - utilities
