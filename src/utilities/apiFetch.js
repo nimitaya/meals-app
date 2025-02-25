@@ -10,7 +10,7 @@ export async function fetchData(url) {
   // wenn respone NICHT OK ist
   if (!response.ok) {
     // erstelle new Fehler und Throw
-    throw new Error("Fehler bei fetch");
+    throw new Error("Error while fetching");
   }
 
   // Daten als Json parsen und zurückgeben

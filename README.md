@@ -58,6 +58,7 @@
 
 ## Resourcen
 
+- [Used API TheMealDB](https://www.themealdb.com/api.php)
 - [Convert JSON to JS Objekt](https://www.convertsimple.com/convert-json-to-javascript/)
 - [Install TailwindCss V4 in React Vite](https://ndimoforaretas.github.io/posts/add-tailwindcss4-to-react-vite-copy/)
 - [Add DaisyUI V5 to TailwindCss V4](https://v5.daisyui.com/components/)
