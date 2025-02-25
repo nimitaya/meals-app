@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header>
+    <header data-theme="night">
       <nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/meals">Meals</NavLink>
