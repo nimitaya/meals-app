@@ -57,7 +57,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a  className="btn text-xl">Button</a>
+          <a  className="btn btn-secondary text-xl">Button</a>
         </div>
       </nav>
     </header>

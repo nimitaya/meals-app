@@ -13,12 +13,11 @@ function App() {
         <Routes>
           <Route path="/" element={<NavLayout />}>
             <Route index element={<Home />} />
-            <Route path="meals" element={<Meals />}>
-              <Route path="details" element={<MealDetails />} />
-              {/* TODO Route mit Parameter Einstellung */}
-            </Route>
+            <Route path="meals" element={<Meals />} />
+            {/* TODO Route mit Parameter Einstellung */}
+            <Route path="meals/:id" element={<MealDetails />} />
             <Route path="about" element={<About />} />
-            <Route path="*" element={<Error />}/>
+            <Route path="*" element={<Error />} />
           </Route>
         </Routes>
       </BrowserRouter>
