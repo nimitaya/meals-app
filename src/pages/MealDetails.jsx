@@ -21,8 +21,8 @@ const MealDetails = () => {
   }, [id]);
 
   return (
-    <main data-theme="night" className="container mx-auto p-2">
-      <div className="bg-base-200 min-h-full px-40">
+    <main data-theme="night" className="container mx-auto p-2 min-h-screen" >
+      <div className="bg-base-200 px-40">
         <div className="hero-content flex-col lg:flex-row-reverse gap-8">
           <img
             src={meal.strMealThumb}
