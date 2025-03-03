@@ -22,12 +22,12 @@ const MealDetails = () => {
 
   return (
     <main data-theme="night" className="container mx-auto p-2">
-      <div className="bg-base-200 min-h-screen px-40">
+      <div className="bg-base-200 min-h-full px-40">
         <div className="hero-content flex-col lg:flex-row-reverse gap-8">
           <img
             src={meal.strMealThumb}
             alt={meal.strMeal}
-            className="max-w-sm rounded-lg shadow-2xl"
+            className="max-w-md rounded-lg shadow-2xl"
           />
           <div>
             <h2 className="text-5xl font-bold mb-4">
