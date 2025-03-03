@@ -15,9 +15,11 @@ const About = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-secondary"><Link to="/" className="text-xl">
-                Go home
-              </Link></button>
+          <button className="btn btn-secondary">
+            <Link to="/" className="text-xl">
+              Go home
+            </Link>
+          </button>
         </div>
       </div>
     </div>
