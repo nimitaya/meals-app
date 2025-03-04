@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen" data-theme="night">
-      <div className="hero-content flex-col lg:flex-row">
+    <div className="hero min-h-screen">
+      <div className="hero-content bg-base-200 flex-col lg:flex-row rounded-lg">
         <img
           src="src/assets/images/about.jpg"
           className="max-w-sm rounded-lg shadow-2xl"

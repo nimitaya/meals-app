@@ -1,6 +1,10 @@
 import { NavLink, Link } from "react-router-dom";
+import { useContext } from "react";
+import { DarkModeContext } from "../contexts/DarkMode";
 
 const Header = () => {
+  const {isDarkMode, toggleDarkMode} = useContext(DarkModeContext)
+
   return (
     <header data-theme="night">
       <nav className="navbar bg-base-100 shadow-sm">
@@ -57,7 +61,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a  className="btn btn-secondary text-xl">Button</a>
+        <button onClick={toggleDarkMode} className="btn">
+            {isDarkMode ? "🌞" : "🌜"}
+          </button>
         </div>
       </nav>
     </header>

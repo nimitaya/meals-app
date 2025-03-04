@@ -5,21 +5,23 @@ import Meals from "./pages/Meals";
 import MealDetails from "./pages/MealDetails";
 import About from "./pages/About";
 import Error from "./pages/Error";
+import DarkModeProvider from "./contexts/DarkMode";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<NavLayout />}>
-            <Route index element={<Home />} />
-            <Route path="meals" element={<Meals />} />
-            {/* TODO Route mit Parameter Einstellung */}
-            <Route path="meals/:id" element={<MealDetails />} />
-            <Route path="about" element={<About />} />
-            <Route path="*" element={<Error />} />
-          </Route>
-        </Routes>
+        <DarkModeProvider>
+          <Routes>
+            <Route path="/" element={<NavLayout />}>
+              <Route index element={<Home />} />
+              <Route path="meals" element={<Meals />} />
+              <Route path="meals/:id" element={<MealDetails />} />
+              <Route path="about" element={<About />} />
+              <Route path="*" element={<Error />} />
+            </Route>
+          </Routes>
+        </DarkModeProvider>
       </BrowserRouter>
     </>
   );

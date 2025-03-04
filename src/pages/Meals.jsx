@@ -22,7 +22,6 @@ const Meals = () => {
 
   return (
     <main
-      data-theme="night"
       className="container mx-auto p-4 flex flex-wrap justify-center gap-8"
     >
       {meals.length > 0 ? (
